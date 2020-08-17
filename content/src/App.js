@@ -14,7 +14,7 @@ import {
 
 import useSettings from '../src/hooks/useSettings';
 import { createTheme } from '../src/theme';
-// import Routes from 'src/Routes';
+import Routes from '../src/Routes';
 
 
 const history = createBrowserHistory();
@@ -55,7 +55,7 @@ function App() {
       <StylesProvider jss={jss}>
         <SnackbarProvider maxSnack={1}>
           <Router history={history}>
-
+            <Routes />
           </Router>
         </SnackbarProvider>
       </StylesProvider>
