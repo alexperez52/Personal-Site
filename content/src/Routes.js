@@ -9,40 +9,47 @@ import {
     Route
 } from 'react-router-dom';
 
+import MainLayout from '../src/layouts/MainLayout'
+
 import LoadingScreen from '../src/components/LoadingScreen'
 
 const routesConfig = [
+    {
+        path: '*',
+        layout: MainLayout,
+        routes: [
 
-    {
-        exact: true,
-        path: '/',
-        component: lazy(() => import('../src/views/Home'))
-    },
+            {
+                exact: true,
+                path: '/',
+                component: lazy(() => import('../src/views/Home'))
+            },
 
-    {
-        exact: true,
-        path: '/about',
-        component: lazy(() => import('../src/views/About'))
-    },
-    {
-        exact: true,
-        path: '/projects',
-        component: lazy(() => import('../src/views/Projects'))
-    },
-    {
-        exact: true,
-        path: '/resume',
-        component: lazy(() => import('../src/views/Resume'))
-    },
-    {
-        exact: true,
-        path: '/404',
-        component: lazy(() => import('../src/views/Error404'))
-    },
-    {
-        component: () => <Redirect to="/404" />
+            {
+                exact: true,
+                path: '/about',
+                component: lazy(() => import('../src/views/About'))
+            },
+            {
+                exact: true,
+                path: '/projects',
+                component: lazy(() => import('../src/views/Projects'))
+            },
+            {
+                exact: true,
+                path: '/resume',
+                component: lazy(() => import('../src/views/Resume'))
+            },
+            {
+                exact: true,
+                path: '/404',
+                component: lazy(() => import('../src/views/Error404'))
+            },
+            {
+                component: () => <Redirect to="/404" />
+            }
+        ]
     }
-
 ];
 
 const renderRoutes = (routes) => (routes ? (
