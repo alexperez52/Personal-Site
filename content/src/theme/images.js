@@ -9,6 +9,7 @@ import Abo from '../theme/about.png'
 import Edi from '../theme/items.png'
 import Clay from '../theme/clay.png'
 import Prodict from '../theme/prodict.png'
+import Snow from '../theme/snow.png'
 
 export default {
 
@@ -28,7 +29,8 @@ export default {
         About: Abo,
         Ediboo: Edi,
         Clay: Clay,
-        Prodict: Prodict
+        Prodict: Prodict,
+        Snow: Snow
     }
 
 }

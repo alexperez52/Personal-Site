@@ -7,11 +7,9 @@ import {
     Typography,
     makeStyles,
     Card,
-    CardActionArea,
-    Collapse,
     CardMedia,
     CardContent,
-    SideBar
+    Box
 } from '@material-ui/core';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardActions from '@material-ui/core/CardActions';
@@ -20,7 +18,7 @@ import IconButton from '@material-ui/core/IconButton';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Images from '../../theme/images';
 import LinkIcon from '@material-ui/icons/Link';
-
+import StarIcon from '@material-ui/icons/Star';
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.background.dark,
@@ -77,7 +75,7 @@ function Content({ className, ...rest }) {
                         </Typography>
                     </Grid>
                     <Grid container item
-                        justify='space-evenly'>
+                        justify='space-between'>
                         <Grid
                             item
                             container
@@ -111,7 +109,8 @@ function Content({ className, ...rest }) {
                                 </CardContent>
 
                                 <CardActions disableSpacing>
-                                    <IconButton aria-label="Github Repo">
+                                    <IconButton aria-label="Github Repo" 
+                                    href="https://github.com/alexperez52/FullStack-Food-Delivery-Website" target="_blank" rel="noopener noreferrer">
                                         <GitHubIcon style={{ marginRight: 5, marginTop: -5 }} />
                                         <Typography variant="body1" color="textSecondary" >
                                             Github Repo
@@ -146,7 +145,7 @@ function Content({ className, ...rest }) {
                                     className={classes.media}
                                     title="Clay"
                                 >
-                                    <img src={Images.Cards.Clay} style={{ width: 500, height: 300 }} />
+                                    <img src={Images.Cards.Clay} style={{ width: 500, height: 300 }} alt="clay" />
                                 </CardMedia>
                                 <CardContent>
                                     <Typography variant="body2" color="textSecondary" component="p">
@@ -162,7 +161,8 @@ function Content({ className, ...rest }) {
                                 </CardContent>
 
                                 <CardActions disableSpacing>
-                                    <IconButton aria-label="Github Repo">
+                                    <IconButton aria-label="Github Repo"
+                                    href="https://github.com/alexperez52/TextEditorV3" target="_blank" rel="noopener noreferrer">
                                         <GitHubIcon style={{ marginRight: 5, marginTop: -5 }} />
                                         <Typography variant="body1" color="textSecondary" >
                                             Github Repo
@@ -193,6 +193,15 @@ function Content({ className, ...rest }) {
                                 <CardHeader
                                     title="Prodict"
                                     subheader="Machine Learning Project"
+                                    action={
+                                        <Typography variant="body1"> 
+                                            <Box color="orange" display="flex">
+                                            Hackathon Winner!
+                                            <StarIcon style={{marginLeft: 5, marginTop: -5}}/>
+
+                                            </Box>
+                                        </Typography>
+                                    }
                                 />
                                 <CardMedia
                                     className={classes.media}
@@ -214,7 +223,8 @@ function Content({ className, ...rest }) {
                                 </CardContent>
 
                                 <CardActions disableSpacing>
-                                    <IconButton aria-label="Github Repo">
+                                    <IconButton aria-label="Github Repo"
+                                    href="https://github.com/alexperez52/CEWIT-Hackthon-Project" target="_blank" rel="noopener noreferrer">
                                         <GitHubIcon style={{ marginRight: 5, marginTop: -5 }} />
                                         <Typography variant="body1" color="textSecondary" >
                                             Github Repo
@@ -242,29 +252,38 @@ function Content({ className, ...rest }) {
 
                             <Card className={classes.card}>
                                 <CardHeader
-                                    title="Clay"
-                                    subheader="Text Editor Desktop Application"
+                                    title="Sound Snowflake Visualization"
+                                    subheader="Sound visualization project"
                                 />
                                 <CardMedia
                                     className={classes.media}
-                                    image={Images.Cards.Clay}
-                                    title="Clay"
+                                    image={Images.Cards.Snow}
+                                    title="Snowflake Sound Visualization"
                                 />
                                 <CardContent>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        This is a Smart Text Editor that uses different data structures to analyze
-                                        and manipulate text. Support Spell check and Markov Chain text Generation.
+                                        Simulation of Snowfall's natural Phenomenon through the structured use of Mathematical models that function with Sound.
+                                   
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        <Box color="orange">
+                                        Suny Undergraduate Research Conference Submission.
+                                        </Box>
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        Faculty Mentor: Bin Li
                                         <hr size="1" />
                                         <br />
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary">
-                                        Java FX, HashMap, LinkedList
+                                        Javascript, p5.js library, HTML / CSS
                                     </Typography>
 
                                 </CardContent>
 
                                 <CardActions disableSpacing>
-                                    <IconButton aria-label="Github Repo">
+                                    <IconButton aria-label="Github Repo"
+                                    href="https://github.com/alexperez52/Sound-Fountain" target="_blank" rel="noopener noreferrer">
                                         <GitHubIcon style={{ marginRight: 5, marginTop: -5 }} />
                                         <Typography variant="body1" color="textSecondary" >
                                             Github Repo
@@ -272,7 +291,7 @@ function Content({ className, ...rest }) {
                                     </IconButton>
 
                                     <IconButton
-                                        href="https://www.youtube.com/watch?v=8aA9wUFSjmY" target="_blank" rel="noopener noreferrer"
+                                        href="#" target="_blank" rel="noopener noreferrer"
                                         aria-label="show more"
                                     >
 
