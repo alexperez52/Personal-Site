@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Page from '../../components/Page';
+import Content from '../Error404/Content';
 
 
 const useStyles = makeStyles(() => ({
@@ -15,7 +16,7 @@ function Error404() {
             className={classes.root}
             title="Error"
         >
-            Error 404
+            <Content />
         </Page>
     );
 }
