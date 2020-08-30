@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
     paddingTop: 0,
-    paddingBottom: 0
+    paddingBottom: 10,
+
   },
   avatar: {
     backgroundColor: theme.palette.secondary.main,

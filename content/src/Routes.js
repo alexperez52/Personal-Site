@@ -10,7 +10,6 @@ import {
 } from 'react-router-dom';
 
 import MainLayout from '../src/layouts/MainLayout'
-
 import LoadingScreen from '../src/components/LoadingScreen'
 
 const routesConfig = [

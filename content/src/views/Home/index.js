@@ -19,7 +19,6 @@ function Home() {
         >
             <Hero />
             <Content />
-            <Contact />
         </Page>
     );
 }
