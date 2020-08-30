@@ -13,7 +13,7 @@ function Resume() {
     return (
         <Page
             className={classes.root}
-            title="Resume"
+            title="Alexis | Resume"
         >
             <Content />
         </Page>
