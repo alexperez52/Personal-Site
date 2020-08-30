@@ -20,7 +20,7 @@ const routesConfig = [
 
             {
                 exact: true,
-                path: '/',
+                path: '*',
                 component: lazy(() => import('../src/views/Home'))
             },
 
