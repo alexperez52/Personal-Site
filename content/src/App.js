@@ -11,7 +11,6 @@ import {
   StylesProvider,
   ThemeProvider
 } from '@material-ui/core';
-import Contact from '../src/views/Home/Contact'
 
 
 import useSettings from '../src/hooks/useSettings';
@@ -36,6 +35,7 @@ const useStyles = makeStyles(() => createStyles({
       width: '100%'
     },
     body: {
+      height: '100%',
       width: '100%'
     },
     '#root': {
@@ -57,7 +57,6 @@ function App() {
         <SnackbarProvider maxSnack={1}>
           <Router history={history}>
             <Routes />
-            <Contact />
           </Router>
         </SnackbarProvider>
       </StylesProvider>

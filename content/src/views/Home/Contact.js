@@ -60,31 +60,42 @@ function Features({ className, ...rest }) {
               <Box display="flex"
                 justifyContent='space-evenly'
               >
-                <Avatar className={classes.avatar}>
-                  <img
-                    alt="icon"
-                    style={{ width: 50 }}
-                    src={Images.Logo.github}></img>
-                </Avatar>
-                <Avatar className={classes.avatar}>
-                  <img
-                    alt="icon"
-                    style={{ width: 30 }}
-                    src={Images.Logo.gmail}></img>
-                </Avatar>
-                <Avatar className={classes.avatar}>
-                  <img
-                    alt="icon"
-                    style={{ width: 30 }}
-                    src={Images.Logo.linkedin}></img>
-                </Avatar>
+                <a href="https://github.com/alexperez52" target="_blank" rel="noopener noreferrer">
+                  <Avatar className={classes.avatar}>
+                    <img
+                      alt="icon"
+                      style={{ width: 50 }}
+                      src={Images.Logo.github}></img>
+                  </Avatar>
+                </a>
+                <a target="_top"
+                  rel="noopener noreferrer"
+                  href="mailto:alexperez52@gmail.com">
+                  <Avatar className={classes.avatar}>
+                    <img
+                      alt="icon"
+                      style={{ width: 30 }}
+                      src={Images.Logo.gmail}></img>
+                  </Avatar>
+                </a>
 
-                <Avatar className={classes.avatar}>
-                  <img
-                    alt="icon"
-                    style={{ width: 50 }}
-                    src={Images.Logo.instagram}></img>
-                </Avatar>
+                <a href="https://www.linkedin.com/in/alexis-perez-mendoza-2570981a3/" target="_blank" rel="noopener noreferrer">
+                  <Avatar className={classes.avatar}>
+                    <img
+                      alt="icon"
+                      style={{ width: 30 }}
+                      src={Images.Logo.linkedin}></img>
+                  </Avatar>
+                </a>
+
+                <a href="https://www.instagram.com/alwxz/" target="_blank" rel="noopener noreferrer">
+                  <Avatar className={classes.avatar}>
+                    <img
+                      alt="icon"
+                      style={{ width: 50 }}
+                      src={Images.Logo.instagram}></img>
+                  </Avatar>
+                </a>
               </Box>
             </Grid>
           </Grid>

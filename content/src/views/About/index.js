@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Page from '../../components/Page';
 import Content from '../About/Content';
+import Contact from '../Home/Contact';
 
 
 const useStyles = makeStyles(() => ({
@@ -17,6 +18,7 @@ function About() {
             title="About"
         >
             <Content />
+            <Contact />
         </Page>
     );
 }

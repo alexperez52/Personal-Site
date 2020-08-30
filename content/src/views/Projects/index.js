@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Page from '../../components/Page';
+import Content from '../Projects/Content';
 
 
 const useStyles = makeStyles(() => ({
@@ -15,7 +16,7 @@ function Projects() {
             className={classes.root}
             title="Projects"
         >
-            Projects
+            <Content />
         </Page>
     );
 }

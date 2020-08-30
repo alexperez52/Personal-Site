@@ -13,6 +13,7 @@ import {
     CardContent
 } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom'
+import Images from '../../theme/images';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -59,7 +60,9 @@ function Content({ className, ...rest }) {
                         >
                             <Card className={classes.card}>
                                 <CardActionArea >
-                                    <CardMedia className={classes.media}>
+                                    <CardMedia className={classes.media}
+                                        image={Images.Cards.Projects}>
+
 
                                     </CardMedia>
                                     <CardContent >
@@ -89,7 +92,9 @@ function Content({ className, ...rest }) {
                         >
                             <Card className={classes.card}>
                                 <CardActionArea >
-                                    <CardMedia className={classes.media}>
+                                    <CardMedia className={classes.media}
+                                        image={Images.Cards.Resume}
+                                    >
 
                                     </CardMedia>
                                     <CardContent >
@@ -118,7 +123,8 @@ function Content({ className, ...rest }) {
                         >
                             <Card className={classes.card}>
                                 <CardActionArea >
-                                    <CardMedia className={classes.media}>
+                                    <CardMedia className={classes.media}
+                                        image={Images.Cards.About}>
 
                                     </CardMedia>
                                     <CardContent >
