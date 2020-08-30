@@ -56,7 +56,7 @@ function Content({ className, ...rest }) {
                     container
                     spacing={3}
                 >
-                    Home
+                    Error
                 </Grid>
             </Container>
         </div >

@@ -47,15 +47,16 @@ const themeConfigs = [
                 paper: '#282C34'
             },
             primary: {
-                main: '#8a85ff'
+                main: '#00000f'
             },
             secondary: {
-                main: '#8a85ff'
+                main: '#1c2025'
             },
             text: {
                 primary: '#e6e5e8',
                 secondary: '#adb0bb'
-            }
+            },
+
         },
         shadows: strongShadows
     },
@@ -82,14 +83,14 @@ const themeConfigs = [
                 paper: colors.common.white
             },
             primary: {
-                main: colors.indigo[600]
+                main: colors.grey[600]
             },
             secondary: {
-                main: '#5850EC'
+                main: '#fffff'
             },
             text: {
                 primary: colors.blueGrey[900],
-                secondary: colors.blueGrey[600]
+                secondary: colors.blueGrey[600],
             }
         },
         shadows: softShadows

@@ -25,10 +25,11 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(2)
     },
     link: {
-        fontWeight: theme.typography.fontWeightMedium,
+        fontWeight: theme.typography.fontWeightBold,
         '& + &': {
-            marginLeft: theme.spacing(2)
-        }
+            marginLeft: theme.spacing(3)
+        },
+        fontSize: 18
     },
     divider: {
         width: 1,
