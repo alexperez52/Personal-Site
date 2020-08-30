@@ -56,7 +56,7 @@ function Content({ className, ...rest }) {
                     justify='center'
                 >
                     <iframe src={Resume} width="1000px"
-                        height="1300px" />
+                        height="1300px" title="resume" />
                 </Grid>
             </Container>
         </div >
