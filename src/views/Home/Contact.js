@@ -44,7 +44,7 @@ function Features({ className, ...rest }) {
         >
           Connect with me !
         </Typography>
-        <Box mt={3}>
+        <Box mt={1}>
           <Grid
             container
             spacing={3}

@@ -11,6 +11,7 @@ import {
     makeStyles
 } from '@material-ui/core';
 import Settings from './Settings';
+import Images from '../../theme/images';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -46,9 +47,19 @@ function TopBar({ className, ...rest }) {
             color="default"
             {...rest}
         >
-            <Toolbar className={classes.toolbar}>
-                <RouterLink to="/">
 
+            <Toolbar className={classes.toolbar}>
+
+
+                <RouterLink to="/" style={{ textDecoration: 'none' }}>
+                    <Box flexGrow={1} display='flex'>
+                        <img src={Images.Logo.Alex}
+                            style={{ height: 40 }}></img>
+                        <Box color='red' fontSize='32px'
+                        >
+                            lexis
+                            </Box>
+                    </Box>
                 </RouterLink>
 
                 <Box flexGrow={1} />
