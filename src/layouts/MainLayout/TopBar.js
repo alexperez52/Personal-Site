@@ -54,7 +54,7 @@ function TopBar({ className, ...rest }) {
                 <RouterLink to="/" style={{ textDecoration: 'none' }}>
                     <Box flexGrow={1} display='flex'>
                         <img src={Images.Logo.Alex}
-                            style={{ height: 40 }}></img>
+                            style={{ height: 40 }} alt="logo"></img>
                         <Box color='red' fontSize='32px'
                         >
                             lexis
