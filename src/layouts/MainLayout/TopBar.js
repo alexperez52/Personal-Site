@@ -12,6 +12,8 @@ import {
 } from '@material-ui/core';
 import Settings from './Settings';
 import Images from '../../theme/images';
+import '../../assets/css/index.css'
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -42,73 +44,79 @@ function TopBar({ className, ...rest }) {
     const classes = useStyles();
 
     return (
-        <AppBar
-            className={clsx(classes.root, className)}
-            color="default"
-            {...rest}
-        >
-
-            <Toolbar className={classes.toolbar}>
+        <div>
+            <header id="topNavDesktop">
 
 
-                <RouterLink to="/" style={{ textDecoration: 'none' }}>
-                    <Box flexGrow={1} display='flex'>
-                        <img src={Images.Logo.Alex}
-                            style={{ height: 40 }} alt="logo"></img>
-                        <Box color='red' fontSize='32px'
-                        >
-                            lexis
+                <AppBar
+                    className={clsx(classes.root, className)}
+                    color="default"
+                    {...rest}
+                >
+
+                    <Toolbar className={classes.toolbar}>
+
+
+                        <RouterLink to="/" style={{ textDecoration: 'none' }}>
+                            <Box flexGrow={1} display='flex'>
+                                <img src={Images.Logo.Alex}
+                                    style={{ height: 40 }} alt="logo"></img>
+                                <Box color='red' fontSize='32px'
+                                >
+                                    lexis
                             </Box>
-                    </Box>
-                </RouterLink>
+                            </Box>
+                        </RouterLink>
 
-                <Box flexGrow={1} />
-                <Link
-                    className={classes.link}
-                    color="textSecondary"
-                    component={RouterLink}
-                    to="/"
-                    underline="none"
-                    variant="body2"
-                >
-                    Home
+                        <Box flexGrow={1} />
+                        <Link
+                            className={classes.link}
+                            color="textSecondary"
+                            component={RouterLink}
+                            to="/"
+                            underline="none"
+                            variant="body2"
+                        >
+                            Home
         </Link>
-                <Link
-                    className={classes.link}
-                    color="textSecondary"
-                    component={RouterLink}
-                    to="/about"
-                    underline="none"
-                    variant="body2"
-                >
-                    About
+                        <Link
+                            className={classes.link}
+                            color="textSecondary"
+                            component={RouterLink}
+                            to="/about"
+                            underline="none"
+                            variant="body2"
+                        >
+                            About
         </Link>
-                <Link
-                    className={classes.link}
-                    color="textSecondary"
-                    component={RouterLink}
-                    to="/projects"
-                    underline="none"
-                    variant="body2"
-                >
-                    Projects
+                        <Link
+                            className={classes.link}
+                            color="textSecondary"
+                            component={RouterLink}
+                            to="/projects"
+                            underline="none"
+                            variant="body2"
+                        >
+                            Projects
         </Link>
-                <Link
-                    className={classes.link}
-                    color="textSecondary"
-                    component={RouterLink}
-                    to="/resume"
-                    underline="none"
-                    variant="body2"
-                >
-                    Resume
+                        <Link
+                            className={classes.link}
+                            color="textSecondary"
+                            component={RouterLink}
+                            to="/resume"
+                            underline="none"
+                            variant="body2"
+                        >
+                            Resume
         </Link>
-                <Settings />
+                        <Settings />
 
-                <Divider className={classes.divider} />
+                        <Divider className={classes.divider} />
 
-            </Toolbar>
-        </AppBar>
+                    </Toolbar>
+                </AppBar>
+            </header>
+        </div>
     );
 }
 
