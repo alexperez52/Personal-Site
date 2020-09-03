@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     card: {
-        marginTop: 30,
+        margin: 10,
         width: 550,
         backgroundColor: theme.palette.secondary.main
     },
@@ -77,12 +77,15 @@ function Content({ className, ...rest }) {
                         </Typography>
                     </Grid>
                     <Grid container item
-                        justify='space-between'>
+                        >
                         <Grid
                             item
                             container
                             justify='center'
-                            md={4}
+                            lg={4}
+                            md={12}
+                            sm={12}
+
                             xs={12}>
 
                             <Card className={classes.card}>
@@ -136,7 +139,10 @@ function Content({ className, ...rest }) {
                             item
                             container
                             justify='center'
-                            md={4}
+                            lg={4}
+                            md={12}
+                            sm={12}
+
                             xs={12}>
 
                             <Card className={classes.card}>
@@ -197,9 +203,11 @@ function Content({ className, ...rest }) {
                             item
                             container
                             justify='center'
-                            md={4}
-                            xs={12}>
+                            lg={4}
+                            md={12}
+                            sm={12}
 
+                            xs={12}>
                             <Card className={classes.card}>
                                 <CardHeader
                                     title="Clay"
@@ -251,7 +259,10 @@ function Content({ className, ...rest }) {
                             item
                             container
                             justify='center'
-                            md={4}
+                            lg={4}
+                            md={12}
+                            sm={12}
+
                             xs={12}>
 
                             <Card className={classes.card}>
