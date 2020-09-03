@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom';
 import {
     Box,
-    Grid,
+    Link,
     AppBar,
     Toolbar,
     makeStyles
@@ -13,6 +13,8 @@ import Button from '@material-ui/core/Button';
 import '../../assets/css/index.css'
 import Images from '../../theme/images';
 import Hamburger from '@material-ui/icons/Menu';
+import Settings from './Settings';
+
 
 const useStyles = makeStyles((theme) => ({
 
@@ -54,15 +56,56 @@ function TopBarPhone({ className, ...rest }) {
     const content = (
         <Box flexDirection='column'
             display='flex'
-            height='100%'>
-            <Box
-                p={2}
-                display="flex"
-                justifyContent="center"
-            >
-                <Link to="/">
+            height='100%'
+            alignContent='center'
+            justifyContent='center'>
+            <Box p={2}>
+                <Link
+                    className={classes.link}
+                    color="textSecondary"
+                    component={RouterLink}
+                    to="/"
+                    underline="none"
+                    variant="body2"
+                >
                     Home
-                </Link>
+        </Link>
+            </Box>
+            <Box p={2}>
+                <Link
+                    className={classes.link}
+                    color="textSecondary"
+                    component={RouterLink}
+                    to="/about"
+                    underline="none"
+                    variant="body2"
+                >
+                    About
+        </Link>
+            </Box>
+            <Box p={2}>
+                <Link
+                    className={classes.link}
+                    color="textSecondary"
+                    component={RouterLink}
+                    to="/projects"
+                    underline="none"
+                    variant="body2"
+                >
+                    Projects
+        </Link>
+            </Box>
+            <Box p={2}>
+                <Link
+                    className={classes.link}
+                    color="textSecondary"
+                    component={RouterLink}
+                    to="/resume"
+                    underline="none"
+                    variant="body2"
+                >
+                    Resume
+        </Link>
             </Box>
         </Box>
     )
@@ -111,6 +154,7 @@ function TopBarPhone({ className, ...rest }) {
                     </Box>
 
                     <Box>
+                        <Settings />
                         {['right'].map((anchor) => (
                             <React.Fragment key={anchor}>
                                 <Button onClick={toggleDrawer(anchor, true)} >
