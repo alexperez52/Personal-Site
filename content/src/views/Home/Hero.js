@@ -75,16 +75,21 @@ function Hero({ className, ...rest }) {
                 Hello, I am Alexis Perez-Mendoza
               </Typography>
               <Box mt={2}
-                display="flex">
+                display="flex"
+              >
                 <Typography
                   align='center'
                   variant="body1"
                   style={{ fontSize: 25 }}
                   color="textSecondary"
                 >
-                  Welcome to my Personal Site. I'm a Junior studying Computer
-                  Science in Stony Brook University.
-                  
+                  <Box display="inline" color="#ff6600">
+                    Welcome
+                  </Box> to my Personal Site. I'm a Junior studying Computer
+                  Science at <Box color="#971a1f" display='inline'>
+                    Stony Brook University.
+                  </Box>
+
                 </Typography>
               </Box>
               <Box mt={0}>
@@ -92,7 +97,7 @@ function Hero({ className, ...rest }) {
                   variant="body1"
                   align="center"
                   color="textSecondary"
-                  style={{fontSize: 25}}
+                  style={{ fontSize: 25 }}
                 >
                   I have a passion for software development and mathematics. Feel free to
                   navigate through my website and be sure to check out my projects.

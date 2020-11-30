@@ -19,6 +19,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import Images from '../../theme/images';
 import LinkIcon from '@material-ui/icons/Link';
 import StarIcon from '@material-ui/icons/Star';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.background.dark,
@@ -31,8 +32,9 @@ const useStyles = makeStyles((theme) => ({
 
     },
     card: {
-        marginTop: 10,
-        width: 500
+        margin: 10,
+        width: 550,
+        backgroundColor: theme.palette.secondary.main
     },
     media: {
         height: 300,
@@ -75,12 +77,15 @@ function Content({ className, ...rest }) {
                         </Typography>
                     </Grid>
                     <Grid container item
-                        justify='space-between'>
+                        >
                         <Grid
                             item
                             container
                             justify='center'
-                            md={4}
+                            lg={4}
+                            md={12}
+                            sm={12}
+
                             xs={12}>
 
                             <Card className={classes.card}>
@@ -129,13 +134,80 @@ function Content({ className, ...rest }) {
                             </Card>
                         </Grid>
 
+                       
                         <Grid
                             item
                             container
                             justify='center'
-                            md={4}
+                            lg={4}
+                            md={12}
+                            sm={12}
+
                             xs={12}>
 
+                            <Card className={classes.card}>
+                                <CardHeader
+                                    title="Prodict"
+                                    subheader="Machine Learning Project"
+                                    action={
+                                        <Typography variant="body1"> 
+                                            <Box color="orange" display="flex">
+                                            Hackathon Winner!
+                                            <StarIcon style={{marginLeft: 5, marginTop: -5}}/>
+
+                                            </Box>
+                                        </Typography>
+                                    }
+                                />
+                                <CardMedia
+                                    className={classes.media}
+                                    image={Images.Cards.Prodict}
+                                    title="Prodict"
+                                />
+                                <CardContent>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        Machine learning project that predicts the next NBA MVP based on
+                                        previous MVP data. Uses Linear Regression, Random Forest Regression
+                                        and Gradient Boosting Regression.
+                                        <hr size="1" />
+                                        <br />
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary">
+                                        Python, Bootstrap, Flask, Google Cloud
+                                    </Typography>
+
+                                </CardContent>
+
+                                <CardActions disableSpacing>
+                                    <IconButton aria-label="Github Repo"
+                                    href="https://github.com/alexperez52/CEWIT-Hackthon-Project" target="_blank" rel="noopener noreferrer">
+                                        <GitHubIcon style={{ marginRight: 5, marginTop: -5 }} />
+                                        <Typography variant="body1" color="textSecondary" >
+                                            Github Repo
+                                        </Typography>
+                                    </IconButton>
+                                    <IconButton
+                                        href="https://mvp-prediction.appspot.com/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="show more"
+                                    >
+
+                                        <LinkIcon style={{ marginRight: 5, marginTop: -5 }} />
+                                        <Typography variant="body1" color="textSecondary">
+                                            Project URL
+                                        </Typography>
+                                    </IconButton>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                        <Grid
+                            item
+                            container
+                            justify='center'
+                            lg={4}
+                            md={12}
+                            sm={12}
+
+                            xs={12}>
                             <Card className={classes.card}>
                                 <CardHeader
                                     title="Clay"
@@ -145,12 +217,13 @@ function Content({ className, ...rest }) {
                                     className={classes.media}
                                     title="Clay"
                                 >
-                                    <img src={Images.Cards.Clay} style={{ width: 500, height: 300 }} alt="clay" />
+                                    <img src={Images.Cards.Clay} style={{ width: 550, height: 300 }} alt="clay" />
                                 </CardMedia>
                                 <CardContent>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         This is a Smart Text Editor that uses different data structures to analyze
-                                        and manipulate text. Supports Spell check and Markov Chain text Generation.
+                                        and manipulate text. Supports Spell check and Markov Chain text Generation. Also contains
+                                        a VERY accurate syllable counter using Regular Expressions. 
                                         <hr size="1" />
                                         <br />
                                     </Typography>
@@ -186,68 +259,10 @@ function Content({ className, ...rest }) {
                             item
                             container
                             justify='center'
-                            md={4}
-                            xs={12}>
+                            lg={4}
+                            md={12}
+                            sm={12}
 
-                            <Card className={classes.card}>
-                                <CardHeader
-                                    title="Prodict"
-                                    subheader="Machine Learning Project"
-                                    action={
-                                        <Typography variant="body1"> 
-                                            <Box color="orange" display="flex">
-                                            Hackathon Winner!
-                                            <StarIcon style={{marginLeft: 5, marginTop: -5}}/>
-
-                                            </Box>
-                                        </Typography>
-                                    }
-                                />
-                                <CardMedia
-                                    className={classes.media}
-                                    image={Images.Cards.Prodict}
-                                    title="Prodict"
-                                />
-                                <CardContent>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        Machine learning project that predicts the next NBA MVP based on
-                                        previous MVP data. Uses Linear Regression, Random Forest Regression
-                                        and Gradient Boosting Regression.
-                                        <hr size="1" />
-                                        <br />
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary">
-                                        Python, Bootstrap, Flask
-                                    </Typography>
-
-                                </CardContent>
-
-                                <CardActions disableSpacing>
-                                    <IconButton aria-label="Github Repo"
-                                    href="https://github.com/alexperez52/CEWIT-Hackthon-Project" target="_blank" rel="noopener noreferrer">
-                                        <GitHubIcon style={{ marginRight: 5, marginTop: -5 }} />
-                                        <Typography variant="body1" color="textSecondary" >
-                                            Github Repo
-                                        </Typography>
-                                    </IconButton>
-                                    <IconButton
-                                        href="https://mvp-prediction.appspot.com/" target="_blank" rel="noopener noreferrer"
-                                        aria-label="show more"
-                                    >
-
-                                        <LinkIcon style={{ marginRight: 5, marginTop: -5 }} />
-                                        <Typography variant="body1" color="textSecondary">
-                                            Project URL
-                                        </Typography>
-                                    </IconButton>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                        <Grid
-                            item
-                            container
-                            justify='center'
-                            md={4}
                             xs={12}>
 
                             <Card className={classes.card}>

@@ -7,9 +7,10 @@ import Res from '../theme/resume.png'
 import Proj from '../theme/projects.png'
 import Abo from '../theme/about.png'
 import Edi from '../theme/items.png'
-import Clay from '../theme/clay.png'
+import Clay from '../theme/text.png'
 import Prodict from '../theme/prodict.png'
 import Snow from '../theme/snow.png'
+import Alex from '../theme/alex.png'
 
 export default {
 
@@ -18,7 +19,8 @@ export default {
         gmail: Gmail,
         github: Github,
         instagram: Insta,
-        linkedin: Linked
+        linkedin: Linked,
+        Alex: Alex
     },
     Large: {
         hack: Hackathon

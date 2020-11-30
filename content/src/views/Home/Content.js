@@ -12,8 +12,10 @@ import {
     Link,
     CardContent
 } from '@material-ui/core';
+import WebIcon from '@material-ui/icons/Web';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import FaceIcon from '@material-ui/icons/Face';
 import { Link as RouterLink } from 'react-router-dom'
-import Images from '../../theme/images';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,7 +63,8 @@ function Content({ className, ...rest }) {
                             <Card className={classes.card}>
                                 <CardActionArea >
                                     <CardMedia className={classes.media}
-                                        image={Images.Cards.Projects}>
+                                    >
+                                        <WebIcon style={{ height: 200, width: 340 }} />
 
 
                                     </CardMedia>
@@ -93,8 +96,9 @@ function Content({ className, ...rest }) {
                             <Card className={classes.card}>
                                 <CardActionArea >
                                     <CardMedia className={classes.media}
-                                        image={Images.Cards.Resume}
+
                                     >
+                                        <AssignmentIndIcon style={{ height: 200, width: 340 }} />
 
                                     </CardMedia>
                                     <CardContent >
@@ -124,7 +128,8 @@ function Content({ className, ...rest }) {
                             <Card className={classes.card}>
                                 <CardActionArea >
                                     <CardMedia className={classes.media}
-                                        image={Images.Cards.About}>
+                                    >
+                                        <FaceIcon style={{ height: 200, width: 340 }} />
 
                                     </CardMedia>
                                     <CardContent >

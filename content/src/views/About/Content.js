@@ -77,7 +77,7 @@ function Content({ className, ...rest }) {
                                 I'm a Computer Science student with big ambitions. I really enjoy participating in Hackathons because
                                 of the environment and the like minded programmers around me. I also enjoy problem solving and programming
                                 challenges. I strive off competition but I do enjoy helping
-                                others. I belive that working together with others is the best way to learn in this ever-evolving field.
+                                others. I believe that working together with others is the best way to learn in this ever-evolving field.
                         </Typography>
                         </Grid>
 

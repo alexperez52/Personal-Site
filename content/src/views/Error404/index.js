@@ -14,7 +14,7 @@ function Error404() {
     return (
         <Page
             className={classes.root}
-            title="Error"
+            title="Alexis | Error"
         >
             <Content />
         </Page>

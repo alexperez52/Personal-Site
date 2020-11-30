@@ -71,11 +71,11 @@ function Settings() {
                     classes={{ badge: classes.badge }}
                 >
                     <IconButton
-                        color="inherit"
+                        color="textPrimary"
                         onClick={handleOpen}
                         ref={ref}
                     >
-                        <SvgIcon fontSize="small">
+                        <SvgIcon fontSize="small" >
                             <SettingsIcon />
                         </SvgIcon>
                     </IconButton>

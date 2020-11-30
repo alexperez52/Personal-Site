@@ -15,7 +15,7 @@ function About() {
     return (
         <Page
             className={classes.root}
-            title="About"
+            title="Alexis | About"
         >
             <Content />
             <Contact />

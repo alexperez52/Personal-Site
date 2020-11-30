@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core';
 import TopBar from './TopBar';
+import TopBarPhone from './TopBarPhone'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,6 +36,7 @@ function MainLayout({ children }) {
     return (
         <div className={classes.root}>
             <TopBar />
+            <TopBarPhone />
             <div className={classes.wrapper}>
                 <div className={classes.contentContainer}>
                     <div className={classes.content}>
