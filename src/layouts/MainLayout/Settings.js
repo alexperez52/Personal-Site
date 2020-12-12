@@ -10,24 +10,53 @@ import {
     TextField,
     Tooltip,
     Typography,
-    makeStyles
+    makeStyles,
+    Switch
 } from '@material-ui/core';
 import { Settings as SettingsIcon } from 'react-feather';
 import useSettings from '../../hooks/useSettings';
 import { THEMES } from '../../constants';
-
+import Brightness3Icon from '@material-ui/icons/Brightness3';
 const useStyles = makeStyles((theme) => ({
-    badge: {
-        height: 10,
-        width: 10,
-        borderRadius: 5,
-        marginTop: 10,
-        marginRight: 5
+    root: {
+        width: "75px",
+        height: "48px",
+        padding: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+
     },
-    popover: {
-        width: 320,
-        padding: theme.spacing(2)
-    }
+    track: {
+        width: "40px",
+        height: "20px",
+        borderRadius: "10px",
+        borderStyle: 'solid',
+        borderWidth: '4px',
+        borderColor: 'grey',
+        backgroundColor: 'white'
+    },
+    switchBase: {
+        color: 'black',
+        "&$checked": {
+            color: "#6e40c9",
+            transform: "translateX(30px)",
+
+        },
+        "&$checked + $track": {
+            backgroundColor: "black",
+            borderRadius: "10px",
+            borderStyle: 'solid',
+            borderWidth: '4px',
+            borderColor: '#6e40c9',
+        },
+    },
+    checked: {},
+    thumb: {
+        width: "25px",
+        height: "25px",
+        transform: "translateX(15px)",
+    },
 }));
 
 
@@ -41,94 +70,69 @@ function Settings() {
         responsiveFontSizes: settings.responsiveFontSizes,
         theme: settings.theme
     });
+    const [state, setState] = React.useState({
+        checkedA: values.theme === THEMES.ONE_DARK,
+    });
 
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
-    const handleChange = (field, value) => {
-        setValues({
-            ...values,
-            [field]: value
-        });
-    };
-
-    const handleSave = () => {
+    const handleTheme = (event) => {
+        setState({ ...state, [event.target.name]: event.target.checked });
+        if (state.checkedA) {
+            values.theme = THEMES.LIGHT
+        }
+        else {
+            values.theme = THEMES.ONE_DARK
+        }
         saveSettings(values);
-        setOpen(false);
     };
 
     return (
         <>
-            <Tooltip title="Settings">
-                <Badge
-                    color="secondary"
-                    variant="dot"
-                    classes={{ badge: classes.badge }}
-                >
-                    <IconButton
-                        color="textPrimary"
-                        onClick={handleOpen}
-                        ref={ref}
-                    >
-                        <SvgIcon fontSize="small" >
-                            <SettingsIcon />
-                        </SvgIcon>
-                    </IconButton>
-                </Badge>
-            </Tooltip>
-            <Popover
-                anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'center'
+
+            <Switch
+                classes={{
+                    root: classes.root,
+                    switchBase: classes.switchBase,
+                    checked: classes.checked,
+                    track: classes.track,
+                    thumb: classes.thumb,
                 }}
-                classes={{ paper: classes.popover }}
-                anchorEl={ref.current}
-                onClose={handleClose}
-                open={isOpen}
+                checked={state.checkedA}
+                onChange={handleTheme}
+                name="checkedA"
+                size="large"
+                checkedIcon={<SvgIcon
+                    style={{
+                        color: '#ffdf5d', backgroundColor: '#6e40c9',
+                        borderRadius: '50%',
+                        borderStyle: 'solid',
+                        borderWidth: '6px',
+                        borderColor: '#6e40c9',
+                        width: 30,
+                        height: 30,
+                        transform: "rotate(125deg)"
+                    }} >
+
+                    <Brightness3Icon />
+                </SvgIcon>}
+                icon={
+                    <SvgIcon
+                        style={{
+                            color: '#ffdf5d', backgroundColor: 'black',
+                            borderRadius: '50%',
+                            borderRadius: '50%',
+                            borderStyle: 'solid',
+                            borderWidth: '6px',
+                            borderColor: 'black',
+                            width: 30,
+                            height: 30,
+                            transform: "rotate(125deg)"
+                        }} >
+
+                        <Brightness3Icon />
+                    </SvgIcon>}
             >
-                <Typography
-                    variant="h4"
-                    color="textPrimary"
-                >
-                    Settings
-        </Typography>
-                <Box mt={2}>
-                    <TextField
-                        fullWidth
-                        label="Theme"
-                        name="theme"
-                        onChange={(event) => handleChange('theme', event.target.value)}
-                        select
-                        SelectProps={{ native: true }}
-                        value={values.theme}
-                        variant="outlined"
-                    >
-                        {Object.keys(THEMES).map((theme) => (
-                            <option
-                                key={theme}
-                                value={theme}
-                            >
-                                {capitalCase(theme)}
-                            </option>
-                        ))}
-                    </TextField>
-                </Box>
-                <Box mt={2}>
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        fullWidth
-                        onClick={handleSave}
-                    >
-                        Save Settings
-          </Button>
-                </Box>
-            </Popover>
+
+            </Switch >
         </>
     );
 }
