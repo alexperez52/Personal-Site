@@ -152,9 +152,11 @@ function TopBarPhone({ className, ...rest }) {
                             </Box>
                         </Link>
                     </Box>
-
                     <Box>
                         <Settings />
+                    </Box>
+                    <Box>
+
                         {['right'].map((anchor) => (
                             <React.Fragment key={anchor}>
                                 <Button onClick={toggleDrawer(anchor, true)} >

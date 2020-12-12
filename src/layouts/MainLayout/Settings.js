@@ -53,74 +53,69 @@ const useStyles = makeStyles((theme) => ({
 function Settings() {
     const classes = useStyles();
     const { settings, saveSettings } = useSettings();
-    const [values] = useState({
+    const [state, setState] = useState({
+        checkedA: settings.theme === THEMES.ONE_DARK,
         direction: settings.direction,
         responsiveFontSizes: settings.responsiveFontSizes,
         theme: settings.theme
-    });
-    const [state, setState] = React.useState({
-        checkedA: values.theme === THEMES.ONE_DARK,
     });
 
     const handleTheme = (event) => {
         setState({ ...state, [event.target.name]: event.target.checked });
         if (state.checkedA) {
-            values.theme = THEMES.LIGHT
+            state.theme = THEMES.LIGHT
         }
         else {
-            values.theme = THEMES.ONE_DARK
+            state.theme = THEMES.ONE_DARK
         }
-        saveSettings(values);
+        saveSettings(state);
     };
 
     return (
-        <>
 
-            <Switch
-                classes={{
-                    root: classes.root,
-                    switchBase: classes.switchBase,
-                    checked: classes.checked,
-                    track: classes.track,
-                    thumb: classes.thumb,
-                }}
-                checked={state.checkedA}
-                onChange={handleTheme}
-                name="checkedA"
-                size="large"
-                checkedIcon={<SvgIcon
+        <Switch
+            classes={{
+                root: classes.root,
+                switchBase: classes.switchBase,
+                checked: classes.checked,
+                track: classes.track,
+                thumb: classes.thumb,
+            }}
+            checked={state.checkedA}
+            onChange={handleTheme}
+            name="checkedA"
+            size="medium"
+            checkedIcon={<SvgIcon
+                style={{
+                    color: '#ffdf5d', backgroundColor: '#6e40c9',
+                    borderRadius: '50%',
+                    borderStyle: 'solid',
+                    borderWidth: '6px',
+                    borderColor: '#6e40c9',
+                    width: 30,
+                    height: 30,
+                    transform: "rotate(125deg)"
+                }} >
+
+                <Brightness3Icon />
+            </SvgIcon>}
+            icon={
+                <SvgIcon
                     style={{
-                        color: '#ffdf5d', backgroundColor: '#6e40c9',
+                        color: '#ffdf5d', backgroundColor: '#263238',
                         borderRadius: '50%',
                         borderStyle: 'solid',
                         borderWidth: '6px',
-                        borderColor: '#6e40c9',
+                        borderColor: '#263238',
                         width: 30,
                         height: 30,
                         transform: "rotate(125deg)"
                     }} >
-
                     <Brightness3Icon />
                 </SvgIcon>}
-                icon={
-                    <SvgIcon
-                        style={{
-                            color: '#ffdf5d', backgroundColor: 'black',
-                            borderRadius: '50%',
-                            borderStyle: 'solid',
-                            borderWidth: '6px',
-                            borderColor: 'black',
-                            width: 30,
-                            height: 30,
-                            transform: "rotate(125deg)"
-                        }} >
+        >
 
-                        <Brightness3Icon />
-                    </SvgIcon>}
-            >
-
-            </Switch >
-        </>
+        </Switch >
     );
 }
 
