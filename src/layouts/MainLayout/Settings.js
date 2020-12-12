@@ -1,19 +1,9 @@
-import React, { useState, useRef } from 'react';
-import { capitalCase } from 'change-case';
+import React, { useState } from 'react';
 import {
-    Badge,
-    Box,
-    Button,
-    IconButton,
-    Popover,
     SvgIcon,
-    TextField,
-    Tooltip,
-    Typography,
     makeStyles,
     Switch
 } from '@material-ui/core';
-import { Settings as SettingsIcon } from 'react-feather';
 import useSettings from '../../hooks/useSettings';
 import { THEMES } from '../../constants';
 import Brightness3Icon from '@material-ui/icons/Brightness3';
@@ -62,10 +52,8 @@ const useStyles = makeStyles((theme) => ({
 
 function Settings() {
     const classes = useStyles();
-    const ref = useRef(null);
     const { settings, saveSettings } = useSettings();
-    const [isOpen, setOpen] = useState(false);
-    const [values, setValues] = useState({
+    const [values] = useState({
         direction: settings.direction,
         responsiveFontSizes: settings.responsiveFontSizes,
         theme: settings.theme
@@ -118,7 +106,6 @@ function Settings() {
                     <SvgIcon
                         style={{
                             color: '#ffdf5d', backgroundColor: 'black',
-                            borderRadius: '50%',
                             borderRadius: '50%',
                             borderStyle: 'solid',
                             borderWidth: '6px',
