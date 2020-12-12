@@ -1,2 +1,2 @@
 ## Personal Website
-# Deployed @ https://www.alexis-perez-mendoza.tech/
+### Deployed @ https://www.alexis-perez-mendoza.tech/
