@@ -8,11 +8,8 @@ import {
   Typography,
   makeStyles
 } from '@material-ui/core';
-<<<<<<< HEAD
 import Profile from '../../theme/images';
 
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,15 +60,12 @@ function Hero({ className, ...rest }) {
             xs={12}
             md={12}
           >
-<<<<<<< HEAD
             
             <Box 
               display="flex"
               gridGap="40px"
             >
 
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
             <Box
               display="flex"
               alignItems='center'
@@ -101,7 +95,6 @@ function Hero({ className, ...rest }) {
                     Welcome
                   </Box> to my Personal Site. I'm a Junior studying Computer
                   Science at <Box color="#971a1f" display='inline'>
-<<<<<<< HEAD
                     Stony Brook University 
                   </Box>
                   {" "}
@@ -109,21 +102,12 @@ function Hero({ className, ...rest }) {
                 </Typography>
               </Box>
               {/* <Box mt={0}>
-=======
-                    Stony Brook University.
-                  </Box>
-
-                </Typography>
-              </Box>
-              <Box mt={0}>
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                 <Typography
                   variant="body1"
                   align="center"
                   color="textSecondary"
                   style={{ fontSize: 25 }}
                 >
-<<<<<<< HEAD
                   I have a passion for software development and mathematics. 
                 </Typography>
               </Box> */}
@@ -131,18 +115,10 @@ function Hero({ className, ...rest }) {
             </Box>
 
             <Box mt={3}>
-=======
-                  I have a passion for software development and mathematics. Feel free to
-                  navigate through my website and be sure to check out my projects.
-                </Typography>
-              </Box>
-              <Box mt={3}>
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                 <Grid
                   container
                   spacing={3}
                 >
-<<<<<<< HEAD
               <img src={Profile.Large.prof} alt="Profile" style={{ width: 200, borderRadius:100 }}></img>
 
                 </Grid>
@@ -150,15 +126,6 @@ function Hero({ className, ...rest }) {
         </Box>
 
           </Grid>
-=======
-
-
-                </Grid>
-              </Box>
-            </Box>
-          </Grid>
-
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
         </Grid>
       </Container>
     </div>

@@ -49,11 +49,7 @@ function Content({ className, ...rest }) {
                     container
                     justify='space-evenly'
                     spacing={3}>
-<<<<<<< HEAD
                                             <Grid
-=======
-                    <Grid
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                         item
                         container
                         justify='center'
@@ -61,49 +57,28 @@ function Content({ className, ...rest }) {
                         xs={12}>
                         <Link
                             component={RouterLink}
-<<<<<<< HEAD
                             to="/about"
-=======
-                            to="/projects"
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             underline="none"
                         >
                             <Card className={classes.card}>
                                 <CardActionArea >
                                     <CardMedia className={classes.media}
                                     >
-<<<<<<< HEAD
                                         <FaceIcon style={{ height: 200, width: 340 }} />
-=======
-                                        <WebIcon style={{ height: 200, width: 340 }} />
-
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
                                     </CardMedia>
                                     <CardContent >
                                         <Typography gutterBottom variant="h5" component="h2">
-<<<<<<< HEAD
                                             About
                             </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Click here to read about me
-=======
-                                            Projects
-                            </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            Click here to view my projects
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             </Typography>
                                     </CardContent>
                                 </CardActionArea>
                             </Card>
                         </Link>
                     </Grid>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                     <Grid
                         item
                         container
@@ -112,40 +87,23 @@ function Content({ className, ...rest }) {
                         xs={12}>
                         <Link
                             component={RouterLink}
-<<<<<<< HEAD
                             to="/projects"
-=======
-                            to="/resume"
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             underline="none"
                         >
                             <Card className={classes.card}>
                                 <CardActionArea >
                                     <CardMedia className={classes.media}
-<<<<<<< HEAD
                                     >
                                         <WebIcon style={{ height: 200, width: 340 }} />
 
-=======
-
-                                    >
-                                        <AssignmentIndIcon style={{ height: 200, width: 340 }} />
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
                                     </CardMedia>
                                     <CardContent >
                                         <Typography gutterBottom variant="h5" component="h2">
-<<<<<<< HEAD
                                             Projects
                             </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Click here to view my projects
-=======
-                                            Resume
-                            </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            Click here to view my Resume
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -153,10 +111,6 @@ function Content({ className, ...rest }) {
                         </Link>
                     </Grid>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                     <Grid
                         item
                         container
@@ -165,50 +119,31 @@ function Content({ className, ...rest }) {
                         xs={12}>
                         <Link
                             component={RouterLink}
-<<<<<<< HEAD
                             to="/resume"
-=======
-                            to="/about"
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             underline="none"
                         >
                             <Card className={classes.card}>
                                 <CardActionArea >
                                     <CardMedia className={classes.media}
-<<<<<<< HEAD
 
                                     >
                                         <AssignmentIndIcon style={{ height: 200, width: 340 }} />
-=======
-                                    >
-                                        <FaceIcon style={{ height: 200, width: 340 }} />
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
                                     </CardMedia>
                                     <CardContent >
                                         <Typography gutterBottom variant="h5" component="h2">
-<<<<<<< HEAD
                                             Resume
                             </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Click here to view my Resume
-=======
-                                            About
-                            </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            Click here to read about me
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             </Typography>
                                     </CardContent>
                                 </CardActionArea>
                             </Card>
                         </Link>
                     </Grid>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                 </Grid>
             </Container>
         </div >

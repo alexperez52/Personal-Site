@@ -11,7 +11,6 @@ import Clay from '../theme/text.png'
 import Prodict from '../theme/prodict.png'
 import Snow from '../theme/snow.png'
 import Alex from '../theme/alex.png'
-<<<<<<< HEAD
 import Profile from '../theme/profile.jpg'
 import SBUHacks from '../theme/sbuhacks.png'
 import Miraflores from '../theme/miraflores1.jpg'
@@ -24,8 +23,6 @@ import Shanghai3 from '../theme/shanghai3.jpg'
 import TargetAllocator from '../theme/Targetallocator.png'
 import UserIntructions from '../theme/userinstructions.png'
 import PressRelease from '../theme/pressrelease.png'
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
 export default {
 
@@ -38,7 +35,6 @@ export default {
         Alex: Alex
     },
     Large: {
-<<<<<<< HEAD
         prof: Profile,
         hack: Hackathon,
         sbuhacks: SBUHacks,
@@ -52,24 +48,15 @@ export default {
     },
     Cards: {
         targetalloc: TargetAllocator,
-=======
-        hack: Hackathon
-    },
-    Cards: {
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
         Resume: Res,
         Projects: Proj,
         About: Abo,
         Ediboo: Edi,
         Clay: Clay,
         Prodict: Prodict,
-<<<<<<< HEAD
         Snow: Snow,
         UserInstructions: UserIntructions,
         PressRelease: PressRelease
-=======
-        Snow: Snow
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
     }
 
 }

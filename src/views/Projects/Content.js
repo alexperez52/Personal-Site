@@ -56,11 +56,7 @@ function Content({ className, ...rest }) {
             {...rest}
         >
             <Container maxWidth="xl">
-<<<<<<< HEAD
                 <Grid container spacing={3}>
-=======
-                <Grid container spacing={0}>
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                     <Grid container item direction='column'>
                         <Typography
                             className={classes.link}
@@ -75,18 +71,12 @@ function Content({ className, ...rest }) {
                             color="textSecondary"
                         >
 
-<<<<<<< HEAD
                             Below are some of my projects with their respective GitHub links.
-=======
-                            Below are only some of the projects that I have made. I only included the ones with the most
-                            robust functionality.
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             <hr />
                         </Typography>
                     </Grid>
                     <Grid container item
                         >
-<<<<<<< HEAD
                             <Grid
                             item
                             container
@@ -142,8 +132,6 @@ function Content({ className, ...rest }) {
                                 </CardActions>
                             </Card>
                         </Grid>
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                         <Grid
                             item
                             container
@@ -161,23 +149,16 @@ function Content({ className, ...rest }) {
                                 />
                                 <CardMedia
                                     className={classes.media}
-<<<<<<< HEAD
                                     style={{height: 0, paddingTop: '85%'}}
 
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                                     image={Images.Cards.Ediboo}
                                     title="Ediboo"
                                 />
                                 <CardContent>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         This is a similar service to Uber Eats. Users can register as a Customer, Restaurant
-<<<<<<< HEAD
                                         Owner or Driver. Customers can order food, Restaurant owners can setup their shop and drivers
                                         can find customer orders to deliver. Financial records are also available through a dashboard.
-=======
-                                        Owner or Driver.
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                                         <hr size="1" />
                                         <br />
                                     </Typography>
@@ -238,11 +219,8 @@ function Content({ className, ...rest }) {
                                 <CardMedia
                                     className={classes.media}
                                     image={Images.Cards.Prodict}
-<<<<<<< HEAD
                                     style={{height: 0, paddingTop: '85%'}}
 
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                                     title="Prodict"
                                 />
                                 <CardContent>
@@ -400,7 +378,6 @@ function Content({ className, ...rest }) {
                             </Card>
                         </Grid>
                     </Grid>
-<<<<<<< HEAD
                     <Grid container item direction='column'>
                         <Typography
                             className={classes.link}
@@ -510,8 +487,6 @@ function Content({ className, ...rest }) {
                         </Grid>
                     </Grid>
                     </Grid>
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                 </Grid>
 
             </Container>

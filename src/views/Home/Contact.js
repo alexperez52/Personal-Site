@@ -88,22 +88,14 @@ function Features({ className, ...rest }) {
                   </Avatar>
                 </a>
 
-<<<<<<< HEAD
                 {/* <a href="https://www.instagram.com/alwxz/" target="_blank" rel="noopener noreferrer">
-=======
-                <a href="https://www.instagram.com/alwxz/" target="_blank" rel="noopener noreferrer">
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                   <Avatar className={classes.avatar}>
                     <img
                       alt="icon"
                       style={{ width: 50 }}
                       src={Images.Logo.instagram}></img>
                   </Avatar>
-<<<<<<< HEAD
                 </a> */}
-=======
-                </a>
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
               </Box>
             </Grid>
           </Grid>

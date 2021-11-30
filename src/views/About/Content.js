@@ -58,36 +58,22 @@ function Content({ className, ...rest }) {
             <Container maxWidth="lg">
                 <Grid
                     container
-<<<<<<< HEAD
                     spacing={5}
                     direction='column'
                 >
 
                     <Grid item container md={12} direction='row' justify='space-between'>
                         <Grid item md={3}>
-=======
-                    spacing={2}
-                    direction='column'
-                >
-
-                    <Grid item container md={12} direction='row' >
-                        <Grid item md={6}>
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                             <Typography
                                 color="textPrimary"
                                 variant="h1"
                                 className={classes.link}
                             >
-<<<<<<< HEAD
                                 Career & Interests
-=======
-                                A little bit about me ...
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                         </Typography>
                             <Typography
                                 variant="h3"
                                 color="textSecondary">
-<<<<<<< HEAD
                                 I'm a Computer Science student with an interest in working with
                                 data tooling and micro service development. I really enjoy participating in Hackathons because
                                 of the environment and collaboration. I believe that working together with others is the best way to 
@@ -108,20 +94,6 @@ function Content({ className, ...rest }) {
                                 Picture @SBU Hacks
                             </Typography>
                             
-=======
-                                I'm a Computer Science student with big ambitions. I really enjoy participating in Hackathons because
-                                of the environment and the like minded programmers around me. I also enjoy problem solving and programming
-                                challenges. I strive off competition but I do enjoy helping
-                                others. I believe that working together with others is the best way to learn in this ever-evolving field.
-                        </Typography>
-                        </Grid>
-
-                        <Grid item md={6} align="center" direction='column'>
-                            <img src={Hack.Large.hack} alt="Hackathon" style={{ width: 300 }}></img>
-                            <Typography color="textSecondary">
-                                Picture of Winning Hackathon @CEWIT SBU
-                            </Typography>
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                         </Grid>
                     </Grid>
                     <Grid item>
@@ -185,13 +157,9 @@ function Content({ className, ...rest }) {
                                     <li>
                                         Java
                                     </li>
-<<<<<<< HEAD
                                     <li>
                                         Golang
                                     </li>
-=======
-
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                                     <li>
                                         Python
                                     </li>
@@ -261,12 +229,9 @@ function Content({ className, ...rest }) {
                                     <li>
                                         Linux
                                     </li>
-<<<<<<< HEAD
                                     <li>
                                         MacOS
                                     </li>
-=======
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
                                 </ul>
                             </Typography>
                         </Grid>
@@ -274,7 +239,6 @@ function Content({ className, ...rest }) {
 
                     </Grid>
 
-<<<<<<< HEAD
                     <Grid item>
                     <hr size="1" />
                     <br></br>
@@ -338,9 +302,6 @@ function Content({ className, ...rest }) {
                     </Grid>
                  
                 </Grid>
-=======
-
->>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
                 </Grid>
             </Container>
