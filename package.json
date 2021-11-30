@@ -36,7 +36,11 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "react-scripts start",
+=======
+    "start": "node server.js",
+>>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

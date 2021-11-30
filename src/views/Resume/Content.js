@@ -6,7 +6,11 @@ import {
     Grid,
     makeStyles
 } from '@material-ui/core';
+<<<<<<< HEAD
 import Resume from '../../theme/Alexis_Perez_Resume.pdf'
+=======
+import Resume from '../../theme/Alexis_Perez-Mendoza_Resume.pdf'
+>>>>>>> 63d6fae6046dade64e325347ff2bcc5a7f560dc7
 
 const useStyles = makeStyles((theme) => ({
     root: {
